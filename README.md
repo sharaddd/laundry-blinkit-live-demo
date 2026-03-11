@@ -1,73 +1,80 @@
-# React + TypeScript + Vite
+# 🧺 Blinkit Laundry Prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-fidelity, interactive prototype designed to integrate a laundry service into the existing Blinkit ecosystem. This project demonstrates a seamless end-to-end user journey from service discovery to order tracking, all wrapped in a premium mobile experience.
 
-Currently, two official plugins are available:
+## ✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. **Discovery & Service Selection**
+*   **Smart Tiers**: Choose between machine wash, steam ironing, or professional dry cleaning.
+*   **Interactive Cart**: Real-time price calculation based on quantity and service type.
 
-## React Compiler
+### 2. **AI Stain Assist (Industry-First Concept)**
+*   **Interactive Garment Mapping**: Users can tap on a digital representation of a shirt, saree, or other garments to mark exact stain locations.
+*   **Contextual Details**: Attach notes or photos of specific stains to ensure professional treatment.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3. **Sustainability-First Logistics**
+*   **Reusable Bag Swap**: Get a fresh bag at pickup and return the old one for sanitization.
+*   **Stackable Wardrobe Boxes**: Eco-friendly delivery in reusable boxes instead of plastic packaging.
 
-## Expanding the ESLint configuration
+### 4. **Transparency & Trust**
+*   **Wash-Cam**: Live view access during the stain treatment and washing stages.
+*   **AI Inventory Receipt**: Automated item detection at pickup to verify counts instantly.
+*   **Real-time Tracking**: A detailed multi-stage progress tracker with ETA updates.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 5. **Retention & Loyalty**
+*   **Laundry Pass**: Subscription-based model (Basic, Plus, Family) for reduced per-kg rates and priority slots.
+*   **Integrated Cross-sell**: Ability to buy laundry detergents and care products directly after ordering.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   **Framework**: [React 19](https://react.dev/)
+*   **Build Tool**: [Vite](https://vitejs.dev/)
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+*   **Icons**: [Lucide React](https://lucide.dev/)
+*   **Components**: Custom UI system inspired by Shadcn/UI (Dialogs, Cards, Buttons, Inputs)
+*   **Presentation**: Premium CSS-based Mobile Wireframe with glassmorphism effects.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Prerequisites
+*   Node.js (v18 or higher)
+*   npm or yarn
+
+### Installation
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/sharaddd/laundry-blinkit-live-demo.git
+    cd laundry-blinkit-live-demo
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Run locally**:
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in browser**:
+    Navigate to `http://localhost:5173/`
+
+---
+
+## 📱 Design Presentation
+This prototype is optimized for a **430x880px** presentation. It features a custom-built phone frame to provide context for the mobile-first UX. 
+
+*   **Notch Safe Area**: Built-in padding at the top to clear device hardware.
+*   **Glassmorphism Nav**: A modern, blurred bottom navigation bar pinned to the device frame.
+*   **Mobile Scrolling**: Fully scrollable content area within the device "screen."
+
+---
+
+## 📄 License
+This project is for demonstration and prototype purposes. 
+Designed by **Sharad Tiwari**.
