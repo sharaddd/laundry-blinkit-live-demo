@@ -40,11 +40,7 @@ interface StainData {
   markers: StainMarker[];
 }
 
-interface CartItem {
-  service: string;
-  tier: string;
-  price: number;
-}
+
 
 // ─── Mock Data ──────────────────────────────────────────────────
 const SERVICE_TIERS = [
